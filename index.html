@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit's Portfolio</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="color-1.css">
+    <link rel="stylesheet" href="projects/projects.css">
+
+    <!-- STYLE SWITCHER FILES -->
+    <link rel="stylesheet" href="style-switcher.css">
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
+
+</head>
+<body>
+    <!-- MAIN CONTAINER START -->
+    <div class="main-container">
+
+        <!-- START OF THE ASIDE PART -->
+        <aside class="aside">
+            <div class="logo">
+                <a href="#"><span>S</span>mit</a>
+            </div>
+
+            <!-- nav toggler -->
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <!-- nav toggler end -->
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa fa-list"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- END OF THE ASIDE PART -->
+
+        <!-- START OF THE MAIN CONTENT -->
+        <div class="main-content">
+
+            <!-- HOME SECTION -->
+            <section class="home active section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, My name is <span class="name">Smit Joshi</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Web Developer</span></h3>
+                            <p>I'm a software engineer with a diploma in computer engineering, currently pursuing my bachelor's degree in computer engineering in my final year.</p>
+                            <!-- <a href="#" class="btn">Download Resume</a> -->
+                            <a href="#" class="btn" id="downloadResumeBtn">Download Resume</a>
+
+                            <!-- script for downloading the resume -->
+                            <script>
+                                // JavaScript function to handle the button click
+                                document.getElementById('downloadResumeBtn').addEventListener('click', function(event) {
+                                  event.preventDefault(); // Prevent default anchor behavior
+                                  // Open the resume in a new tab
+                                  window.open('resume.pdf', '_blank'); // Make sure the PDF is in the correct location
+                                });
+                              </script>
+                        </div>
+
+                        <div class="home-img">
+                            <!-- <img src="images/hero.jpg" alt=""> -->
+                            <img src="Me.jpg" alt="Smit Joshi">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- HOME SECTION END -->
+
+            <!-- ABOUT SECTION START -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Hello There! I'm Smit Joshi & I'm <span>Aspiring to be a Full-stack Web Developer & ML Engineer</span></h3>
+                                    <p>I'm a passionate programmer who has been fixing bugs in everyone's life except my own. 
+                                        I enjoy playing video games and exploring new technologies. 
+                                        Working out and writing fan fiction are some of my hobbies!</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday: <span>27 Jun 2003</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age: <span>21</span></p>
+                                        </div>
+                                        <!-- <div class="info-item padd-15">
+                                            <p>: <span>www.domain.com</span></p>
+                                        </div> -->
+                                        <div class="info-item padd-15">
+                                            <p>Email: <span>smit95841@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree: <span>B.E. Computer</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Nationality: <span>Indian</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City: <span>Pune</span></p>
+                                        </div>
+                                        <!-- <div class="info-item padd-15">
+                                            <p>Freelance: <span>Soon</span></p>
+                                        </div> -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <!-- <a href="#" class="btn">Download My Resume</a> -->
+                                            <a href="#contact" data-sectio-index ="1" class="btn hire-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>HTML & CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 70%;"></div>
+                                                <div class="skill-percent">70%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>JS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 55%;"></div>
+                                                <div class="skill-percent">55%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Python</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>C++</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%;"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- start -->
+
+                                        <div class="skill-item padd-15">
+                                            <h5>Power BI</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 60%;"></div>
+                                                <div class="skill-percent">60%</div>
+                                            </div>
+                                        </div>
+                                        <!-- end -->
+
+                                        <!-- start -->
+                                        <div class="skill-item padd-15">
+                                            <h5>Azure Cloud</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 50%;"></div>
+                                                <div class="skill-percent">50%</div>
+                                            </div>
+                                        </div>
+                                        <!-- end-->
+
+                                        <!-- start -->
+                                        <div class="skill-item padd-15">
+                                            <h5>AI-ML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%;"></div>
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- end-->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+
+
+                                                <!-- timeline items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2006 - 2019
+                                                    </h3>
+                                                    <h4 class="timeline-title">Tenth Grade</h4>
+                                                    <p class="timeline-text">I've completed my tenth grade from Zeal Education Society's Dnyanganga English Medium School, Pune as an SSC Board Student</p>
+                                                </div>
+
+                                                <!-- timeline items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2019 - 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Diploma in Computer Technology</h4>
+                                                    <p class="timeline-text">I've completed my three year diploma in CSE from Sou, Venutai Chavan Polytechnic, Pune</p>
+                                                </div>
+
+                                                <!-- timeline items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022 - 2025
+                                                    </h3>
+                                                    <h4 class="timeline-title">Bachelor's in Computer Science</h4>
+                                                    <p class="timeline-text">I'm pursuing my Bachelor's in Computer Science Engineering from Sinhgad Institute of Technology & Science, Narhe, Pune. Currently, I'm in my final year of engineering</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <!-- Add experience timeline items here -->
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+
+                                                <!-- TIMELINE ITEM -->
+
+                                                <!-- timeline items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> June 2021 - August 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">Python Trainee at Internshala</h4>
+                                                    <p class="timeline-text">
+                                                    
+                                                        
+                                                        As a trainee, 
+                                                        I learnt about the basics of Python, leading to a strong foundation and exposure to my Python skills. 
+                                                        I completed a cricket game as part of my mini project.</b> </p>
+                                                </div>
+
+                                                <!-- TIMELINE END-->
+
+                                                <!-- timeline items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> March 2023  - July 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">AI-ML Trainee at Acmegrade</h4>
+                                                    <p class="timeline-text"> I've learned several concepts in the field of AI and ML, and I've worked on two projects which are <b>Image Recognition using CIFAR-10 & California House Price Prediction</b></p>
+                                                </div>
+
+                                                <!-- timeline items -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Dec 2023 - Jan 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Intern at Kasnet Technologies</h4>
+                                                    <p class="timeline-text">As an intern, I've had an exposure of technologies related to <b>Azure Cloud, Azure AI, Power BI & Agile Framework</b> </p>
+                                                </div>
+
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT SECTION END -->
+
+            <!-- SERVICES BEGIN -->
+            <section class="service section" id="skills">
+                    <div class="container">
+                        <div class="row">
+                                <div class="section-title padd-15">
+                                        <h2>Skills</h2>
+                                </div>
+                        </div>
+                               <div class="row">
+                                    <!-- SERVICE ITEM1 START -->
+                                   <div class="service-item padd-15">
+                                            <div class="service-item-inner">
+                                                    <div class="icon">
+                                                            <i class="fa fa-code"></i>
+                                                            
+                                                            
+                                                    </div>
+                                                            <h4>Web Developer</h4>
+                                                            <p>I've been working on my web development skills since March 2024, and this is my first creation using <b>HTML, CSS, and JS</b></p>
+                                            </div>
+                                   </div>
+                                    <!-- SERVICE ITEM1 END -->
+
+                                    <!-- SERVICE ITEM2 START -->
+                                   <div class="service-item padd-15">
+                                    <div class="service-item-inner">
+                                            <div class="icon">
+                                                    <i class="fa fa-laptop-code"></i>
+                                            </div>
+                                                    <h4>Python & C++ Developer</h4>
+                                                    <p>I’m familiar with Python and C++ for over 2 years and have completed a few projects using both</p>
+                                    </div>
+                           </div>
+                            <!-- SERVICE ITEM2 END -->
+
+                            <!-- SERVICE ITEM3 START -->
+                            <div class="service-item padd-15">
+                                <div class="service-item-inner">
+                                        <div class="icon">
+                                                <!-- <i class="fa fa-palette"></i> -->
+                                                <i class="fa fa-cloud"></i>
+
+                                        </div>
+                                                <h4>Azure Cloud</h4>
+                                                <p>I've completed my Microsoft Azure certification and am familiar with cloud concepts at a beginner level</p>
+                                </div>
+                       </div>
+                        <!-- SERVICE ITEM3 END -->
+
+                        <!-- SERVICE ITEM4 START -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                    <div class="icon">
+                                        <i class="fa fa-robot"></i>
+                                    </div>
+                                            <h4>AI-ML Enthusiast</h4>
+                                            <p>Being passionate about AI and ML, I've worked in this field for a year, & have completed four projects in total</p>
+                            </div>
+                   </div>
+                    <!-- SERVICE ITEM4 END -->
+
+                    <!-- SERVICE ITEM5 START -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                                <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                </div>
+                                        <h4>Version Control</h4>
+                                        <p>Moderate experience with Git and GitHub, having worked on several development projects.</p>
+                        </div>
+               </div>
+                <!-- SERVICE ITEM5 END -->
+
+                <!-- SERVICE ITEM6 START -->
+                <div class="service-item padd-15">
+                    <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa fa-database"></i>
+
+                            </div>
+                                    <h4>DBMS</h4>
+                                    <p>With hands-on experience with MySQL and MongoDB, I have been familiar with DBMS for over 2 years.
+
+                                    </p>
+                    </div>
+           </div>
+            <!-- SERVICE ITEM6 END -->
+                               </div> 
+                    </div>
+            </section>
+            <!-- SERVICES END -->
+
+           <!-- PORTFOLIO SECTION BEGINS -->
+<section class="portfolio section" id="portfolio">
+        
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="portfolio-heading padd-15">
+                <h2>My Projects:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Portfolio items start -->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <a href="projects/project1.html">
+                            <img src="images/portfolio/portfolio-1.jpg" alt="Project 1">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio items end -->
+
+            <!-- Portfolio items start -->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <a href="projects/project2.html">
+                            <img src="images/portfolio/portfolio-2.jpg" alt="Project 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio items end -->
+
+            <!-- Portfolio items start -->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <a href="projects/project3.html">
+                            <img src="images/portfolio/portfolio-3.jpg" alt="Project 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio items end -->
+
+            <!-- Portfolio items start -->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <a href="projects/project4.html">
+                            <img src="images/portfolio/portfolio-4.jpg" alt="Project 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio items end -->
+
+            <!-- Portfolio items start -->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <a href="projects/project5.html">
+                            <img src="images/portfolio/portfolio-5.jpg" alt="Project 5">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio items end -->
+
+            <!-- Portfolio items start -->
+            <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                    <div class="portfolio-img">
+                        <a href="projects/project6.html">
+                            <img src="images/portfolio/portfolio-6.jpg" alt="Project 6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio items end -->
+        </div>
+    </div>
+</section>
+<!-- PORTFOLIO SECTION ENDS -->
+
+                                            <!-- CONTACT SECTION STARTS -->
+
+                <section class="contact section" id="contact">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="section-title padd-15">
+                                    <h2>Contact Me</h2>
+                                </div>
+                            </div>
+                                    <h3 class="contact-title padd-15">Any Questions?</h3>
+                                    <h4 class="contact-sub-title padd-15"> I'M HAPPY TO ANSWER!</h4>
+                                            <div class="row">
+
+
+                                                    <!-- CONTACT INFO ITEM STARTS -->
+                                                    <div class="contact-info-item padd-15">
+                                                        <div class="icon"><i class="fab fa-github"></i></div> <!-- Changed to GitHub icon -->
+                                                        <h4>GitHub</h4>
+                                                        <button onclick="window.location.href='https://github.com/SmitJ27';" class="github-btn">Visit My Github</button> <!-- Added button -->
+                                                    </div>
+                                                    <!-- CONTACT INFO ITEM ENDS -->
+
+                                                    <!-- CONTACT INFO ITEM STARTS -->
+<div class="contact-info-item padd-15">
+    <div class="icon"><i class="fab fa-linkedin linkedin-icon"></i></div>
+    <h4>LinkedIn</h4>
+    <button onclick="window.location.href='https://www.linkedin.com/in/smit-joshi2706';" class="linkedin-btn">Visit my LinkedIn</button>
+</div>
+<!-- CONTACT INFO ITEM ENDS -->
+                                            
+                                    <!---------------GPT WARUN MODIFY KELAY -->
+
+<!-- CONTACT INFO ITEM STARTS -->
+<div class="contact-info-item padd-15">
+    <div class="icon"><i class="fab fa-instagram instagram-icon"></i></div>
+    <h4>Instagram</h4>
+    <button onclick="window.location.href='https://www.instagram.com/smit__joshi27';" class="instagram-btn">Visit my insta</button>
+</div>
+<!-- CONTACT INFO ITEM ENDS -->
+
+<!-- CONTACT INFO ITEM STARTS -->
+<div class="contact-info-item padd-15">
+    <div class="icon"><i class="fas fa-code leetcode-icon"></i></div>
+    <h4>LeetCode</h4>
+    <button onclick="window.location.href='https://leetcode.com/u/smit95841';" class="leetcode-btn">Visit my LeetCode</button>
+</div>
+<!-- CONTACT INFO ITEM ENDS -->
+
+                                    <!------------------ TE MODIFICATION ITHA SAMPLA -->
+
+                                            </div>
+
+                                            <h3 class="contact-title padd-15">SEND ME AN EMAIL! </h3>
+                                            <h4 class="contact-sub-title padd-15">I'LL DO MY BEST TO REACH OUT TO YOU! </h4>
+
+                                            <!-- CONTACT FORM! -->
+                                             <div class="row">
+                                                    <div class="contact-form padd-15">
+                                                            <div class="row">
+                                                                <div class="form-item col-6 padd-15">
+                                                                        <div class="form-group">
+                                                                            <input type="text" class="form-control" placeholder="Name">
+                                                                        </div>
+                                                                </div>
+
+                                                                <div class="form-item col-6 padd-15">
+                                                                    <div class="form-group">
+                                                                        <input type="email" class="form-control" placeholder="Email">
+                                                                    </div>
+                                                            </div>
+                                                            </div>
+
+                                                                    <div class="row">
+                                                                        <div class="form-item col-12 padd-15">
+                                                                            <div class="form-group">
+                                                                                <input type="text" class="form-control" placeholder="Subject">
+                                                                            </div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="form-item col-12 padd-15">
+                                                                            <div class="form-group">
+                                                                               <textarea name="" class="form-control" placeholder="Message"></textarea>
+                                                                            </div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                        <div class="row">
+                                                                            <div class="form-item col-12 padd-15">
+
+                                                                                <button type="Submit" class="btn">Send Message</button>
+                                                                            </div>
+                                                                        </div>
+                                                    </div>
+                                             </div>
+                        </div>
+                </section>
+            <!-- CONTACT SECTION END -->
+        </div>
+        <!-- MAIN CONTENT END -->
+    </div>
+    <!-- MAIN CONTAINER END -->
+
+    <!-- THE STYLE SWITCHING PART BEGINS -->
+
+        <div class="style-switcher">
+                <div class="style-switcher-toggler s-icon">
+                    <i class="fas fa-cog fa-spin"></i>
+                </div>
+                        <div class="day-night s-icon">
+                            <i class="fas"></i>
+                        </div>
+
+                        <h4>Theme Colors</h4>
+                        <div class="colors">
+                            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+                        </div>
+        </div>
+    <!-- THE STYLE SWITCHING PART ENDS -->
+
+    <!-- JS FILE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="style-switcher.js"></script>
+</body>
+</html>
